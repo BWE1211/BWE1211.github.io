@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Level Devil</title>
+
+  <!-- Viewport for mobile -->
+  <meta id="viewport" name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+      background: #000;
+      font-family: sans-serif;
+    }
+
+    #openfl-content {
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+
+    #buy-coffee {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #FF813F;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      z-index: 1000;
+      text-decoration: none;
+    }
+    #buy-coffee:hover {
+      background: #e67333;
+    }
+  </style>
+
+  <!-- Poki stub -->
+  <script src="poki-sdk.js"></script>
+
+  <!-- Main game build -->
+  <script src="Level Devil.js"></script>
+</head>
+
+<body>
+  <noscript>
+    This game requires JavaScript. Please enable JavaScript to play.
+  </noscript>
+
+  <!-- Game container -->
+  <div id="openfl-content"></div>
+
+  <!-- Buy Me a Coffee -->
+  <a id="buy-coffee" href="https://buymeacoffee.com/interstellarcoders" target="_blank">
+    ☕ Buy Me a Coffee
+  </a>
+
+  <!-- Embed the game -->
+  <script>
+    lime.embed("Level Devil", "openfl-content", 854, 480, { parameters: {} });
+  </script>
+</body>
+</html>
