@@ -1,0 +1,63 @@
+/* name=assets/css/styles.css */
+:root{
+  --brand:#3f51b5;
+  --accent:#e91e63;
+  --bg:#fafafe;
+  --card-bg:#fff;
+  --muted:#888;
+  --text:#222;
+}
+
+html,body{
+  margin:0;
+  padding:0;
+  font-family:"Segoe UI", Arial, sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+h1{
+  background:var(--brand);
+  color:#fff;
+  padding:1rem;
+  margin:0;
+}
+
+.container{
+  max-width:700px;
+  margin:2rem auto;
+  background:var(--card-bg);
+  box-shadow:0 4px 16px rgba(0,0,0,0.03);
+  border-radius:8px;
+  padding:2rem;
+  padding-top:0.5rem;
+}
+
+ul{ line-height:2; padding-left:1.2rem; margin:0; }
+li{ margin-bottom:.4rem; }
+a{ color:var(--brand); text-decoration:none; transition:color .2s; }
+a:hover{ color:var(--accent); text-decoration:underline; }
+
+h2{ margin-top:2rem; color:var(--brand); }
+.tip{ font-size:.95rem; color:var(--muted); margin-top:2rem; }
+
+.container p{ margin:0.2rem 0 0.6rem 0; line-height:1.6; color:#444; }
+.subnote{ font-size:0.95rem; color:#555; margin-left:0.2rem; }
+
+/* LevelDevil / game container */
+#openfl-content{ width:100%; height:100%; position:relative; background:#000; }
+#buy-coffee{
+  position:fixed; bottom:20px; right:20px;
+  background:#FF813F; color:#fff; border:none;
+  padding:12px 20px; font-size:16px; border-radius:8px;
+  cursor:pointer; z-index:1000; text-decoration:none;
+}
+#buy-coffee:hover{ background:#e67333; }
+
+/* Responsive tweaks */
+@media (max-width:720px){
+  .container{ margin:1rem; padding:1rem; }
+  h1{ padding:0.8rem; font-size:1.1rem; }
+}
